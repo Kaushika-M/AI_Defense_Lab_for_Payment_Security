@@ -1,0 +1,11 @@
+attack_id,attack_name,category,description,signals,simulation,implemented
+A01,Velocity Attack,Transaction,Rapid sequence of transactions designed to exploit transaction velocity limits.,"High transaction velocity, repeated transactions",Increase transaction_velocity,True
+A02,Device Anomaly,Device / Identity,Fraudulent transaction originating from a previously unseen or changed device.,"device_changed, unusual device behavior",Set device_changed = 1,True
+A03,Behavior Anomaly,Behavioral,Transaction behavior differs significantly from the customer's historical behavior.,"High behavior deviation, unusual amount",Increase behavior_deviation and amount,True
+A04,Hard Velocity Attack,Adaptive,Velocity attack designed to remain close to legitimate transaction behavior.,Moderately elevated velocity,Velocity around 5-7 with normal supporting features,True
+A05,Stealth Velocity Attack,Adaptive,"Velocity attack that intentionally mimics legitimate device, location and behavioral characteristics.",Moderate velocity with minimal anomalies,Velocity around 5 while keeping other features normal,True
+A06,AI Phishing,Social Engineering,AI-generated messages designed to convince users to reveal payment credentials or approve transactions.,"Suspicious links, unusual communication patterns",Future extension,False
+A07,Deepfake Impersonation,Social Engineering,AI-generated voice or video impersonation used to convince victims or support agents to authorize payments.,"Identity inconsistencies, unusual authorization behavior",Future extension,False
+A08,Synthetic Identity,Identity,Combination of fabricated and legitimate identity attributes to create fraudulent accounts.,Inconsistent identity and account history,Future extension,False
+A09,Low-and-Slow Fraud,Adaptive,Small fraudulent transactions spread over time to avoid velocity-based detection.,Subtle repeated deviations,Future extension,False
+A10,Multi-Feature Mimicry,Adaptive,Attacker modifies multiple transaction features to resemble legitimate customer behavior.,Weak individual signals but correlated anomalies,Future extension,False

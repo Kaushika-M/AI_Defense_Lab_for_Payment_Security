@@ -1,0 +1,5 @@
+stage,attack,attacks_tested,detected,detection_rate
+Blue Team v1,Hard Velocity,500,197,39.4
+Blue Team v2,Unseen Hard Velocity,500,348,69.6
+Blue Team v2,Stealth v1,500,23,4.6
+Blue Team v3,Unseen Stealth v2,500,444,88.8
