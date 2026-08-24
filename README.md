@@ -14,7 +14,7 @@ The system follows:
 Try the working prototype:
 
 [AI Defense Lab - Live Demo](https://ai-defense-lab.streamlit.app/)
-## 🎯 What We Built
+## 🎯 What I Built
 
 ### 🔴 Red Team
 Identifies and generates synthetic payment fraud attacks.
@@ -27,7 +27,7 @@ Implemented attacks:
 - Hard Velocity Attack
 - Stealth Velocity Attack
 
-We identified **10 attack types** in total, with 5 currently implemented.
+I identified **10 attack types** in total, with 5 currently implemented.
 
 ### 🔵 Blue Team
 Uses a **Random Forest machine-learning model** to detect fraudulent transactions.
@@ -106,5 +106,16 @@ The generated attack is immediately tested by the Blue Team detector.
 
 ### 1. Create virtual environment
 
-```bash
 python -m venv venv
+
+### 2. Activate environment
+
+.\venv\Scripts\Activate.ps1
+
+### 3. Install dependencies
+
+pip install -r requirements.txt
+
+### 4. Run dashboard
+
+streamlit run dashboard.py
